@@ -22,3 +22,4 @@ Relevant Python files now include module-level documentation explaining their pu
 - Whether the SQLite schema matches all CSV and model expectations.
 - Whether there are enough real biodigester rows for meaningful model training.
 - Whether forecast-mode training has enough historical forecast rows to avoid falling back to NOAA mode.
+date fix
