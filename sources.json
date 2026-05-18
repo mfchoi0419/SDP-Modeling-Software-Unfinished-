@@ -1,0 +1,34 @@
+{
+    "biodigester_daily": {
+        "table": "daily_data",
+        "date_col": "date",
+        "date_format": "%Y-%m-%d",
+        "mappings": {
+            "digester_T_min_today": "digester_T_min_today",
+            "digester_T_max_today": "digester_T_max_today",
+            "ambient_T_avg_today": "ambient_T_avg_today",
+            "CHP_runtime_today": "CHP_runtime_today",
+            "biogas_prod_today": "biogas_prod_today",
+            "solar_rad_today": "solar_rad_today",
+            "digester_T_min_tomorrow": "digester_T_min_tomorrow"
+        }
+    },
+    "noaa_daily": {
+        "table": "weather_history",
+        "date_col": "DATE",
+        "date_format": "%Y-%m-%d",
+        "mappings": {
+            "TMIN": "temp_min_c",
+            "TMAX": "temp_max_c",
+            "TOBS": "temp_obs_c"
+        },
+        "transforms": {
+            "TMIN": "x / 10",
+            "TMAX": "x / 10",
+            "TOBS": "x / 10"
+        },
+    "compute": {
+        "temp_avg_c": "(temp_min_c + temp_max_c) / 2"
+        }
+    }
+}
