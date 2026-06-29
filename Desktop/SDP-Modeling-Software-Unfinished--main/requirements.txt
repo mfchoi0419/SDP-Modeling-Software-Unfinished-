@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+joblib
+pyserial
+openpyxl
+mlflow
+dvc
+fastapi
+uvicorn
+pydantic
+evidently
+pytest
+ruff
+black
+pyyaml
